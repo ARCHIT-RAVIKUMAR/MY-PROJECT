@@ -1,4 +1,4 @@
-// Intro animation: AR → Archit Ravikumar
+
 const logo = document.getElementById("logo");
 const content = document.querySelector(".content");
 
@@ -15,7 +15,7 @@ setTimeout(() => {
   }, 500);
 }, 1500);
 
-// Scroll reveal for sections
+
 const reveals = document.querySelectorAll(".reveal");
 
 function revealOnScroll() {
