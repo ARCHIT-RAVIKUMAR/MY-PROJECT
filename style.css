@@ -1,4 +1,4 @@
-/* Base styles */
+
 body {
   margin: 0;
   background: linear-gradient(135deg, #121826, #1f2937);
@@ -7,7 +7,7 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Intro animation */
+
 .intro {
   height: 100vh;
   display: flex;
@@ -22,17 +22,17 @@ body {
   opacity: 1;
 }
 
-/* Hide content until animation ends */
+
 .hidden {
   display: none;
 }
 
-/* Main content layout */
+
 .content {
   padding: 2rem;
 }
 
-/* Tagline */
+
 .tagline {
   text-align: center;
   font-size: 1.2rem;
@@ -41,7 +41,7 @@ body {
   margin-bottom: 2rem;
 }
 
-/* Sticky navbar */
+
 .navbar {
   position: sticky;
   top: 0;
@@ -58,7 +58,7 @@ body {
   font-weight: bold;
 }
 
-/* Section spacing */
+
 section {
   margin-bottom: 4rem;
 }
@@ -69,7 +69,7 @@ h2 {
   color: #00ffcc;
 }
 
-/* Projects: Coming Soon animation */
+
 .coming-soon {
   text-align: center;
   padding: 2rem;
@@ -103,7 +103,7 @@ h2 {
   }
 }
 
-/* Contact: LinkedIn link animation */
+
 #contact a {
   color: #00ffcc;
   font-weight: bold;
@@ -128,7 +128,7 @@ h2 {
   transform: scaleX(1);
 }
 
-/* Scroll reveal animation */
+
 .reveal {
   opacity: 0;
   transform: translateY(20px);
