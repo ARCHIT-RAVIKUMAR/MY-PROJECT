@@ -1,3 +1,4 @@
+/* Base styles */
 body {
   margin: 0;
   background: linear-gradient(135deg, #121826, #1f2937);
@@ -6,6 +7,7 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Intro animation */
 .intro {
   height: 100vh;
   display: flex;
@@ -20,14 +22,17 @@ body {
   opacity: 1;
 }
 
+/* Hide content until animation ends */
 .hidden {
   display: none;
 }
 
+/* Main content layout */
 .content {
   padding: 2rem;
 }
 
+/* Tagline */
 .tagline {
   text-align: center;
   font-size: 1.2rem;
@@ -36,6 +41,7 @@ body {
   margin-bottom: 2rem;
 }
 
+/* Sticky navbar */
 .navbar {
   position: sticky;
   top: 0;
@@ -52,6 +58,7 @@ body {
   font-weight: bold;
 }
 
+/* Section spacing */
 section {
   margin-bottom: 4rem;
 }
@@ -62,24 +69,66 @@ h2 {
   color: #00ffcc;
 }
 
-.project-card {
-  background-color: #1f2937;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 8px;
+/* Projects: Coming Soon animation */
+.coming-soon {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #ccc;
+  position: relative;
+}
+
+.coming-soon .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  background-color: #00ffcc;
+  border-radius: 50%;
+  animation: blink 1.4s infinite both;
+}
+
+.coming-soon .dot.one { animation-delay: 0s; }
+.coming-soon .dot.two { animation-delay: 0.2s; }
+.coming-soon .dot.three { animation-delay: 0.4s; }
+
+@keyframes blink {
+  0%, 80%, 100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+/* Contact: LinkedIn link animation */
+#contact a {
+  color: #00ffcc;
+  font-weight: bold;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+#contact a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #00ffcc;
+  transform: scaleX(0);
+  transform-origin: left;
   transition: transform 0.3s ease;
 }
 
-.project-card:hover {
-  transform: scale(1.02);
-  background-color: #273549;
+#contact a:hover::after {
+  transform: scaleX(1);
 }
 
-a {
-  color: #00ffcc;
-  text-decoration: none;
-}
-
+/* Scroll reveal animation */
 .reveal {
   opacity: 0;
   transform: translateY(20px);
