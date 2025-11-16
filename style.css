@@ -1,8 +1,9 @@
 body {
   margin: 0;
-  background-color: #121826;
+  background: linear-gradient(135deg, #121826, #1f2937);
   font-family: 'Quicksand', sans-serif;
   color: white;
+  scroll-behavior: smooth;
 }
 
 .intro {
@@ -17,4 +18,75 @@ body {
 #logo {
   transition: all 1s ease-in-out;
   opacity: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+.content {
+  padding: 2rem;
+}
+
+.tagline {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #121826;
+  padding: 1rem;
+  text-align: center;
+  z-index: 100;
+}
+
+.navbar a {
+  margin: 0 1rem;
+  color: #00ffcc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00ffcc;
+}
+
+.project-card {
+  background-color: #1f2937;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+  background-color: #273549;
+}
+
+a {
+  color: #00ffcc;
+  text-decoration: none;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
